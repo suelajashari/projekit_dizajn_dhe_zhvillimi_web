@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Krijo llogari në Healthy Me." />
+    <title>Healthy Me | Regjistrohu</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/forms.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-navigation" aria-label="Navigimi kryesor">
+        <a class="brand" href="../index.html" aria-label="Healthy Me, faqja kryesore">Healthy Me</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menu</button>
+        <ul class="navigation-list" id="main-menu">
+          <li><a href="../index.html">Kryefaqja</a></li>
+          <li><a href="wellbeing.html">Mirëqenia</a></li>
+          <li><a href="hydration.html">Hidratimi</a></li>
+          <li><a href="movement.html">Lëvizja</a></li>
+          <li><a href="login.html">Hyr</a></li>
+          <li><a class="active" href="register.html" aria-current="page">Regjistrohu</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-section" aria-labelledby="register-title">
+        <div class="form-intro">
+          <p class="eyebrow">Bashkohu me ne</p>
+          <h1 id="register-title">Krijo llogarinë tënde</h1>
+          <p>Na trego çfarë dëshiron të përmirësosh në rutinën tënde ditore.</p>
+        </div>
+        <form class="account-form" id="register-form" novalidate>
+          <div class="form-field">
+            <label for="full-name">Emri i plotë</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="register-email">Email</label>
+            <input id="register-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="health-goal">Qëllimi kryesor</label>
+            <select id="health-goal" name="healthGoal" required>
+              <option value="">Zgjidh një qëllim</option>
+              <option value="wellbeing">Mirëqenia</option>
+              <option value="hydration">Hidratimi</option>
+              <option value="movement">Lëvizja</option>
+            </select>
+          </div>
+          <fieldset class="form-field">
+            <legend>Niveli yt i aktivitetit</legend>
+            <label><input name="activityLevel" type="radio" value="low" required /> I ulët</label>
+            <label><input name="activityLevel" type="radio" value="moderate" /> Mesatar</label>
+            <label><input name="activityLevel" type="radio" value="high" /> I lartë</label>
+          </fieldset>
+          <div class="form-field">
+            <label for="register-password">Fjalëkalimi</label>
+            <div class="password-field">
+              <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="6" required />
+              <button class="password-toggle" type="button" data-password-toggle="register-password">Shfaq</button>
+            </div>
+          </div>
+          <label class="checkbox-field">
+            <input name="terms" type="checkbox" required />
+            Pajtohem me kushtet e përdorimit.
+          </label>
+          <button class="button" type="submit">Krijo llogari</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <p>Ke llogari? <a href="login.html">Hyr këtu</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>&copy; 2026 Healthy Me. Hapa të vegjël, ndryshime të mëdha.</p></footer>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/forms.js"></script>
+  </body>
+</html>
+
