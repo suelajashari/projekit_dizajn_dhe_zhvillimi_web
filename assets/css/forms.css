@@ -1,2 +1,99 @@
-/* Stilet e Login dhe Register do të vendosen këtu. */
+.form-section {
+  width: min(100% - 2rem, 38rem);
+  margin-inline: auto;
+}
+
+.form-intro {
+  margin-bottom: 1.75rem;
+}
+
+.form-intro > p:not(.eyebrow) {
+  color: var(--color-muted);
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-field label,
+.form-field legend,
+.checkbox-field {
+  color: var(--color-ink);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-height: 2.85rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: 3px solid rgba(39, 122, 104, 0.2);
+  border-color: var(--color-primary);
+}
+
+.form-field fieldset {
+  border: 0;
+}
+
+fieldset.form-field label,
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.password-field {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.password-toggle {
+  flex: 0 0 auto;
+  padding-inline: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-soft);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.checkbox-field input,
+fieldset.form-field input {
+  width: auto;
+  min-height: auto;
+}
+
+.form-message {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
 

@@ -1,2 +1,75 @@
-/* Ngjyrat, tipografia dhe rregullat globale do të vendosen këtu. */
+:root {
+  --color-ink: #183b36;
+  --color-muted: #5e7470;
+  --color-primary: #277a68;
+  --color-primary-dark: #175548;
+  --color-accent: #f3b647;
+  --color-surface: #ffffff;
+  --color-soft: #eef7f3;
+  --color-border: #d7e6df;
+  --color-page: #f8fbfa;
+  --shadow-soft: 0 12px 30px rgba(24, 59, 54, 0.1);
+  --radius-large: 1.25rem;
+  --radius-medium: 0.75rem;
+  --content-width: 70rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--color-primary-dark);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
 

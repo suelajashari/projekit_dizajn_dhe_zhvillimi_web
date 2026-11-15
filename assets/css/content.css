@@ -1,2 +1,12 @@
-/* Stilet e përbashkëta për faqet e përmbajtjes do të vendosen këtu. */
+.content-section {
+  padding-top: 2rem;
+}
+
+.content-section > h2 {
+  margin-bottom: 1.75rem;
+}
+
+.content-list article {
+  border-top: 4px solid var(--color-accent);
+}
 
